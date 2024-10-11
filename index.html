@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 7</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                El insólito ladrón de talentos
+                <br><br>
+                Hubo una vez un troll malvado, que tenía el sueño de ser el mayor artista del mundo, y planeó robar su talento a pintores, escultores, músicos y poetas. Pero como no encontró la forma, terminó por atrapar y encadenar en su cueva a un anciano mago, obligándolo a transformarle en el mejor de los artistas.
+                <br><br>
+                Convertido en el más magnífico dibujante, músico y escultor, el troll solo necesitó crear una obra para ganar tal fama que comenzó a recorrer el mundo recibiendo fiestas y homenajes. Tan entretenido estaba celebrando su fama, que olvidó su sueño de ser artista y no volvió a crear nada.
+                <br><br>
+                Sin embargo, años después, durante uno de sus viajes, el troll se enamoró de tal forma que no dudó en crear nuevas obras para dedicárselas a su amada. Pero cuando las mostró ante todos, eran tan mediocres y vulgares que hizo el mayor de los ridículos, y la troll se sintió tan avergonzada que nunca más quiso saber de él.
+                <br><br>
+                El troll, enfurecido, volvió a la cueva para exigir al mago que le devolviera su talento artístico. Pero, a pesar de sus intentos, el mago no consiguió nada. Su varita estaba tan polvorienta y seca por falta de uso que apenas quedaba nada de su brillo mágico.
+                <br><br>
+                - Me temo que he perdido mi don para la magia, malvado troll. Y parece que tú has perdido también tu don para las artes.
+                <br><br>
+                - ¡Mentira! - rugió el troll mientras se ponía a dibujar-. Mira este dibujo: es magnífico. Pero no lo era, y así se lo dijo el mago. Y volvió a decírselo cada una de las miles de veces que el furioso troll le mostró un nuevo dibujo, su más reciente escultura o su última melodía.
+                <br><br>
+                Hasta que un día el anciano mago, sintiéndose ya muy débil, suplicó al troll que lo liberase.
+                <br><br>
+                - Si me liberas te devolveré tu arte - dijo.
+                <br><br>
+                El troll sabía que ya no quedaba nada de mágico en aquel hombre, y que no le devolvería nada, pero sintió lástima y lo dejó libre. Entonces el anciano, sin decir nada, fue recorriendo la cueva con calma, recogiendo uno a uno los cientos de dibujos que cubrían el suelo. Luego, despacio y en silencio, los fue colocando uno tras otro en la pared, justo en el orden en que el troll los había pintado.
+                <br><br>
+                Mientras lo hacía, el troll comenzó a maravillarse. Siguiendo los dibujos de lado a lado pudo descubrir cómo unos dibujos torpes y vulgares se iban convirtiendo poco a poco en cuadros decentes para terminar mostrando, en sus últimos trabajos, magníficas obras de un arte insuperable.
+                <br><br>
+                Contemplando el gran artista en que se había convertido, el troll rompió a llorar de felicidad con tanta emoción y alegría, que todo él se convirtió en lágrimas de un agua brillante y cristalina. Y deseando que todos pudieran disfrutar aquel arte logrado con tanto esfuerzo, y sabiendo que si dejaba de usar su talento lo perdería, viajó por las cuevas y ríos del mundo modelando las rocas y creando los paisajes más bellos que aún hoy se pueden encontrar en todos los rincones de nuestra amada tierra.
+            </p>
+                    
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
